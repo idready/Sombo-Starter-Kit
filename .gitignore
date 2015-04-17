@@ -1,0 +1,29 @@
+
+
+node_modules
+dist
+.tmp
+.sass-cache
+app/.sass-cache
+bower_components
+test/bower_components
+
+#Generated Juknks
+
+.editorconfig
+.gitattributes
+.jshintrc
+.yo-rc.json
+
+
+# Test & More
+test/
+
+
+# Database, ressources &  more
+
+db_dump/
+ressources/
+doc/
+log/
+conf/
