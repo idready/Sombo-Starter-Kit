@@ -1,0 +1,34 @@
+
+/* ===========================================
+ * Here is a generic page and how basic import is done.
+ * Import order matters due to some variables used on some components
+ * =========================================== */
+
+/* Config: the config will decide  which part to include or not
+ * You can even create your own config per page if you wish and import it here
+ * ==================================== */
+// @import 'config/default_config';  
+
+/* Core
+ * ==================================== */
+@import 'core/core'; 
+
+/* Components
+ * ==================================== */
+@import 'components/components'; 
+
+/* Regions
+ * ==================================== */
+@import 'regions/regions';
+
+
+/* Page rule here
+ * ==================================== */ 
+
+
+
+
+/* Shame file here, since IE specic must surely override all other rules
+ * ==================================== */ 
+
+@import 'shame/shame';
