@@ -1,20 +1,17 @@
 
 /* ===========================================
- * Helper classes
+ * @mixin: Clearfix
  * =========================================== */
 
-/* Clearfix
+/* Source: http://nicolasgallagher.com/micro-clearfix-hack/
  * ==================================== */
 
 @mixin clearfix() {
-
-  *zoom: 1; /* Hack IE7 */
-
-  &:before, &:after {
-    content: " ";
-    display: table;
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
   }
-
   &:after {
     clear: both;
   }

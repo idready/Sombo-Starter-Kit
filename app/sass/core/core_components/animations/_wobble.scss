@@ -50,11 +50,11 @@
   100% {transform: translateX(0%);}
 }
 
-@mixin wobble($duration, $delay, $function, $fill, $visibility) {
+@mixin wobble($animation-duration, $animation-delay, $animation-function, $animation-fill, $animation-visibility) {
 	@include animation-name(wobble);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  @include duration($animation-duration);
+  @include delay($animation-delay);
+  @include function($animation-function);
+  @include fill-mode($animation-fill);
+  @include visibility($animation-visibility);
 }

@@ -68,11 +68,11 @@
     100% { transform: skewX(0deg); }
 }
 
-@mixin wiggle($duration, $delay, $function, $fill, $visibility) {
+@mixin wiggle($animation-duration, $animation-delay, $animation-function, $animation-fill, $animation-visibility) {
     @include animation-name(wiggle);
-    @include duration($duration);
-    @include delay($delay);
-    @include function($function);
-    @include fill-mode($fill);
-    @include visibility($visibility);
+    @include duration($animation-duration);
+    @include delay($animation-delay);
+    @include function($animation-function);
+    @include fill-mode($animation-fill);
+    @include visibility($animation-visibility);
 }

@@ -21,14 +21,10 @@
  * ==================================== */
 @import 'regions/regions';
 
-
 /* Page rule here
  * ==================================== */ 
-
-
-
+@import 'pages/home';
 
 /* Shame file here, since IE specic must surely override all other rules
  * ==================================== */ 
-
 @import 'shame/shame';

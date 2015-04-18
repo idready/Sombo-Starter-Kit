@@ -33,12 +33,12 @@
 	100% { transform: translateX(0%) skewX(0deg); opacity: 1;}
 }
 
-@mixin lightSpeedIn($duration, $delay, $fill, $visibility) {
+@mixin lightSpeedIn($animation-duration, $animation-delay, $animation-fill, $animation-visibility) {
   @include animation-name(lightSpeedIn);
 	@include function(ease-out);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  @include duration($animation-duration);
+  @include delay($animation-delay);
+  @include function($animation-function);
+  @include fill-mode($animation-fill);
+  @include visibility($animation-visibility);
 }

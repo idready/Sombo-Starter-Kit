@@ -3,5 +3,51 @@
  * Variables for components and more
  * =========================================== */
 
-/* Specific component variable
+/* Grids
  * ==================================== */
+
+$grid-columns: 12 !default;
+$grid-gutter: 20px !default;
+$grid-one-col: (100 / $grid-columns) * 1% !default;
+$grid-row-min-height: 1px !default;
+
+$max-screen-width: rem(1400px) !default;
+
+$bp-screen-size: (
+	
+	bp-xs-screen: 'xs',
+	bp-sm-screen: 'sm',
+	bp-md-screen: 'md',
+	bp-lg-screen: 'lg'
+);
+
+// default Breakpoints, but remember that you are advised to add more when content breaks
+$bp-xs-screen: 480px !default;
+$bp-sm-screen: 768px !default;
+$bp-md-screen: 992px !default;
+$bp-lg-screen: 1200px !default;
+
+
+/* Font-size
+ * ==================================== */
+
+$base-font-family: sans-serif !default;
+$base-font-size: 16 !default;
+$base-line-height: 28 !default;
+
+
+/* Font-face names
+ * ==================================== */
+
+$open-sans-regular: 'Open-Sans-Regular';
+
+
+/* Animations
+ * ==================================== */
+
+$animation-duration: .3s !default;
+$animation-delay: 0s !default;
+$animation-function: ease !default;
+$animation-fill: both !default;
+$animation-visibility: hidden !default;
+

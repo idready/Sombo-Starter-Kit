@@ -14,44 +14,44 @@
 // visibility   Determines whether or not a transformed element is visible when
 //                it is not facing the screen.
 
-@mixin duration($duration: 1s) {
-  -webkit-animation-duration: $duration;
-     -moz-animation-duration: $duration;
-       -ms-animation-duration: $duration;
-        -o-animation-duration: $duration;
-           animation-duration: $duration;
+@mixin duration($animation-duration: 1s) {
+  -webkit-animation-duration: $animation-duration;
+     -moz-animation-duration: $animation-duration;
+       -ms-animation-duration: $animation-duration;
+        -o-animation-duration: $animation-duration;
+           animation-duration: $animation-duration;
 }
 
-@mixin delay($delay: .2s) {
-  -webkit-animation-delay: $delay;
-     -moz-animation-delay: $delay;
-      -ms-animation-delay: $delay;
-       -o-animation-delay: $delay;
-          animation-delay: $delay;
+@mixin delay($animation-delay: .2s) {
+  -webkit-animation-delay: $animation-delay;
+     -moz-animation-delay: $animation-delay;
+      -ms-animation-delay: $animation-delay;
+       -o-animation-delay: $animation-delay;
+          animation-delay: $animation-delay;
 }
 
-@mixin function($function: ease) {
-  -webkit-animation-timing-function: $function;
-     -moz-animation-timing-function: $function;
-      -ms-animation-timing-function: $function;
-       -o-animation-timing-function: $function;
-          animation-timing-function: $function;
+@mixin function($animation-function: ease) {
+  -webkit-animation-timing-function: $animation-function;
+     -moz-animation-timing-function: $animation-function;
+      -ms-animation-timing-function: $animation-function;
+       -o-animation-timing-function: $animation-function;
+          animation-timing-function: $animation-function;
 }
 
-@mixin fill-mode($fill: both) {
-  -webkit-animation-fill-mode: $fill;
-     -moz-animation-fill-mode: $fill;
-      -ms-animation-fill-mode: $fill;
-       -o-animation-fill-mode: $fill;
-          animation-fill-mode: $fill;
+@mixin fill-mode($animation-fill: both) {
+  -webkit-animation-fill-mode: $animation-fill;
+     -moz-animation-fill-mode: $animation-fill;
+      -ms-animation-fill-mode: $animation-fill;
+       -o-animation-fill-mode: $animation-fill;
+          animation-fill-mode: $animation-fill;
 }
 
-@mixin visibility($visibility: hidden) {
-  -webkit-backface-visibility: $visibility;
-     -moz-backface-visibility: $visibility;
-      -ms-backface-visibility: $visibility;
-       -o-backface-visibility: $visibility;
-          backface-visibility: $visibility;
+@mixin visibility($animation-visibility: hidden) {
+  -webkit-backface-visibility: $animation-visibility;
+     -moz-backface-visibility: $animation-visibility;
+      -ms-backface-visibility: $animation-visibility;
+       -o-backface-visibility: $animation-visibility;
+          backface-visibility: $animation-visibility;
 }
 
 @mixin transform-origin($transform-origin: center center) {

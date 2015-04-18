@@ -28,11 +28,11 @@
   100% {opacity: 0; transform: translateY(2000px);}
 }
 
-@mixin bounceOutDown($duration, $delay, $function, $fill, $visibility) {
+@mixin bounceOutDown($animation-duration, $animation-delay, $animation-function, $animation-fill, $animation-visibility) {
   @include animation-name(bounceOutDown);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
+  @include duration($animation-duration);
+  @include delay($animation-delay);
+  @include function($animation-function);
+  @include fill-mode($animation-fill);
+  @include visibility($animation-visibility);
 }

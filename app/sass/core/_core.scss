@@ -3,9 +3,17 @@
  * Framework's core components
  * =========================================== */
 
+/* Normalize all elements
+ * ==================================== */
+ @import 'vendor/normalize';
+
 /* Variables
  * ==================================== */
  @import 'core_components/variables';
+
+/* Mixins
+ * ==================================== */
+ @import 'core_components/mixins';
 
 /* Animation
  * ==================================== */
@@ -14,10 +22,6 @@
 /* Helpers
  * ==================================== */
  @import 'core_components/helpers';
-
-/* Mixins
- * ==================================== */
- @import 'core_components/mixins';
 
 /* Grid
  * ==================================== */
