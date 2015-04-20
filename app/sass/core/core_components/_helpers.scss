@@ -19,3 +19,54 @@
     clear: both;
   }
 }
+
+/* Useful unctions from foundation.zurb.com
+ * ==================================== */
+
+$include-css: () !default;
+$modules: () !default;
+
+/// Checks if a module is in use.
+@function using($name) {
+  // Import from global scope
+  $include-css: $include-css !global;
+  $module-key: map-get($include-css, $name);
+
+  @if $module-key == true or $module-key == null {
+    @return true;
+  }
+  @else {
+    @return false;
+  }
+}
+
+/// Checks if a module's CSS has already been exported.
+@function imported($name) {
+  // Import from global scope
+  $modules: $modules !global;
+  // Check if the module is already on the imported list
+  @if type-of(index($modules, $name)) == 'number' {
+    @return true;
+  }
+  @else {
+    @return false;
+  }
+}
+
+/// Outputs the chunk of content passed if component $name hasn't yet been output.
+/// This prevents code duplication by keeping track of which components have already been output.
+///
+/// @param {string} $name - Name of component to output
+///
+/// @output The content passed, if the component has not yet been exported.
+@mixin exports($name) {
+  // Check if the module has already been imported
+  @if not(imported($name)) {
+    // Check if the module should be used
+    @if using($name) {
+      $modules: append($modules, $name) !global;
+      @content;
+    }
+  }
+}
+

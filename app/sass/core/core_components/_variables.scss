@@ -3,6 +3,22 @@
  * Variables for components and more
  * =========================================== */
 
+/* Colors
+ * ==================================== */
+
+// Same old naming conventions
+
+$primary-color: #00558b !default;
+$secondary-color: #f1f1f1 !default;
+$alert-color: #F04124 !default;
+$info-color: #A0D3E8 !default;
+$success-color: #43AC6A !default;
+$warning-color: #F08A24 !default;
+$dark-color: #232323 !default;
+$gray: #dfdfdf !default;
+$gray-dark: darken($gray, 8) !default;
+$gray-light: lighten($gray, 8) !default;
+
 /* Grids
  * ==================================== */
 
@@ -32,7 +48,7 @@ $bp-lg-screen: 1200px !default;
  * ==================================== */
 
 $base-font-family: sans-serif !default;
-$base-font-size: 16 !default;
+$base-font-size: 16px !default;
 $base-line-height: 28 !default;
 
 
@@ -51,3 +67,26 @@ $animation-function: ease !default;
 $animation-fill: both !default;
 $animation-visibility: hidden !default;
 
+
+/* Buttons
+ * 1. From Foundation framework
+ * ==================================== */
+
+// We use these to make sure border radius matches unless we want it different.
+$global-padding: 1rem; // [1]
+$button-padding: 0.85rem 1rem !default;
+$button-margin: 0 $global-padding $global-padding 0 !default;
+$button-style: solid !default;
+$button-background: $primary-color !default;
+$button-background-hover: scale-color($button-background, $lightness: -15%) !default;
+$button-color: auto !default;
+$button-radius: 0 !default;
+$button-font-size: 0.9rem !default;
+$button-opacity-disabled: 0.5 !default;
+$button-tag-selector: false !default;
+$button-sizes: (
+  tiny: 0.7,
+  small: 0.8,
+  medium: 1,
+  large: 1.3,
+);
