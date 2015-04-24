@@ -3,6 +3,13 @@
  * Variables for components and more
  * =========================================== */
 
+/* Exports
+ * source: 
+ * [1] foundation.zurb.com
+ * [2] Twitter bootstrap
+ * ==================================== */
+
+
 /* Colors
  * ==================================== */
 
@@ -18,6 +25,7 @@ $dark-color: #232323 !default;
 $gray: #dfdfdf !default;
 $gray-dark: darken($gray, 8) !default;
 $gray-light: lighten($gray, 8) !default;
+
 
 /* Grids
  * ==================================== */
@@ -49,7 +57,8 @@ $bp-lg-screen: 1200px !default;
 
 $base-font-family: sans-serif !default;
 $base-font-size: 16px !default;
-$base-line-height: 28 !default;
+$base-line-height: 1.428571429 !default; // 20/14; [2]
+$line-height-computed: floor(($base-font-size * $base-line-height)) !default; // [2]
 
 
 /* Font-face names
@@ -69,7 +78,6 @@ $animation-visibility: hidden !default;
 
 
 /* Buttons
- * 1. From Foundation framework
  * ==================================== */
 
 // We use these to make sure border radius matches unless we want it different.
@@ -85,8 +93,34 @@ $button-font-size: 0.9rem !default;
 $button-opacity-disabled: 0.5 !default;
 $button-tag-selector: false !default;
 $button-sizes: (
-  tiny: 0.7,
-  small: 0.8,
-  medium: 1,
-  large: 1.3,
+  xs: 0.7,
+  sm: 0.8,
+  md: 1,
+  lg: 1.3,
 );
+
+
+/* Forms 
+ * ==================================== */
+
+// Label [1]
+$form-label-fontsize: 0.9rem;
+$form-label-margin: 0.5rem;
+$form-label-color: #333;
+
+// legend [2]
+$legend-color: $gray-dark;
+$legend-border-color: #e5e5e5 !default;
+
+
+// inputs text [2]
+$input-color: #000 !default;
+$input-color-hover: $input-color !default;
+$input-color-focus: $input-color !default;
+$input-background: #fff !default;
+$input-background-hover: $input-background !default;
+$input-background-focus: $input-background !default;
+$input-border: 1px solid #ccc !default;
+$input-border-hover: 1px solid #bbb !default;
+$input-border-focus: 1px solid #999 !default;
+$input-cursor-disabled: not-allowed !default;  

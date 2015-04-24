@@ -7,6 +7,7 @@
  * 
  * 1. From bootstrap's components: foundation.zurb.com
  * 2. From Foundation framework; remove old behavior for old browsers
+ * @TODO: Add button-group and check border-radius
  * ==================================== */
 
  %button {
@@ -26,7 +27,7 @@
 }
 
 
-@mixin button-size($size: medium, $expand: false) {
+@mixin button-size($size: md, $expand: false) {
   $size: $button-font-size * map-get($button-sizes, $size);
   font-size: $size;
 
@@ -69,7 +70,7 @@
 
 // The core button
 @mixin button(
-  $size: medium,
+  $size: md,
   $expand: false,
   $background: $button-background,
   $background-hover: $button-background-hover,
@@ -151,9 +152,9 @@
   .button {
     @include button;
 
-    &.tiny   { @include button-size(tiny); }
-    &.small  { @include button-size(small); }
-    &.large  { @include button-size(large); }
+    &.tiny   { @include button-size(xs); }
+    &.small  { @include button-size(sm); }
+    &.large  { @include button-size(lg); }
     &.expand { @include button-expand; }
 
     &.secondary { @include button-style($secondary-color, auto) }
