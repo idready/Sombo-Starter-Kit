@@ -41,25 +41,24 @@ $include-css: (
   typography: true,
   utilities: true,
 );
- 
+
 
 /* Core
  * ==================================== */
-@import 'core/core'; 
+@import 'core/core';
 
 /* Components
  * ==================================== */
-@import 'components/components'; 
+@import 'components/components';
 
 /* Regions
  * ==================================== */
 @import 'regions/regions';
 
 /* Page rule here
- * ==================================== */ 
+ * ==================================== */
 @import 'pages/home';
 
 /* Shame file here, since IE specic must surely override all other rules
- * ==================================== */ 
+ * ==================================== */
 @import 'shame/shame';
-
