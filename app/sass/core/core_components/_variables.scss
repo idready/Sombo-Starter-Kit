@@ -4,7 +4,7 @@
  * =========================================== */
 
 /* Exports
- * source: 
+ * source:
  * [1] foundation.zurb.com
  * [2] Twitter bootstrap
  * ==================================== */
@@ -30,6 +30,7 @@ $gray-light: lighten($gray, 8) !default;
 /* Grids
  * ==================================== */
 
+$grid-class-name: 'col' !default;
 $grid-columns: 12 !default;
 $grid-gutter: 20px !default;
 $grid-one-col: (100 / $grid-columns) * 1% !default;
@@ -38,7 +39,7 @@ $grid-row-min-height: 1px !default;
 $max-screen-width: rem(1400px) !default;
 
 $bp-screen-size: (
-	
+
 	bp-xs-screen: 'xs',
 	bp-sm-screen: 'sm',
 	bp-md-screen: 'md',
@@ -100,7 +101,7 @@ $button-sizes: (
 );
 
 
-/* Forms 
+/* Forms
  * ==================================== */
 
 // Label [1]
@@ -123,4 +124,4 @@ $input-background-focus: $input-background !default;
 $input-border: 1px solid #ccc !default;
 $input-border-hover: 1px solid #bbb !default;
 $input-border-focus: 1px solid #999 !default;
-$input-cursor-disabled: not-allowed !default;  
+$input-cursor-disabled: not-allowed !default;
