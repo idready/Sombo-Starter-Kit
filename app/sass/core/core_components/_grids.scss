@@ -47,11 +47,11 @@
 	// @TODO: optimize the code below in a loop
 // }
 
-@media (min-width: rem($bp-md-screen)) {
+@media (min-width: rem($bp-xs-screen)) {
     @include calc-grid-column (xs, $grid-columns);
 }
 
-@media (min-width: rem($bp-md-screen)) {
+@media (min-width: rem($bp-sm-screen)) {
     @include calc-grid-column (sm, $grid-columns);
 }
 
@@ -59,7 +59,7 @@
     @include calc-grid-column (md, $grid-columns);
 }
 
-@media (min-width: rem($bp-md-screen)) {
+@media (min-width: rem($bp-lg-screen)) {
     @include calc-grid-column (lg, $grid-columns);
 }
 

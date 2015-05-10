@@ -76,6 +76,7 @@ $animation-delay: 0s !default;
 $animation-function: ease !default;
 $animation-fill: both !default;
 $animation-visibility: hidden !default;
+$default-transition: all $animation-duration $animation-function;
 
 
 /* Buttons
