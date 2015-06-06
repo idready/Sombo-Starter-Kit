@@ -24,10 +24,10 @@
     %#{$style-name} {
         font: {
             @if $category != "" {
-                family: "#{$style-name}", #{$category};
+                family: quote(#{$style-name}), #{$category};
             }
             @else {
-                family: "#{$style-name}";
+                family: quote(#{$style-name});
                 weight: normal;
             }
         }
