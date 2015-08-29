@@ -7,8 +7,8 @@
 /* Import differents particles
  * ==================================== */
 
-@import 'particles/inputs'; 
-@import 'particles/textarea'; 
+@import 'particles/inputs';
+@import 'particles/textarea';
 
 @include exports(form) {
 
@@ -42,8 +42,8 @@ legend {
 
 // [1]
 textarea {
-  
-  border: rem(1px) solid $input-color;	
+
+  border: rem(1px) solid $input-color;
   height: auto;
   width: 100%;
   min-height: rem(50px);
@@ -51,7 +51,7 @@ textarea {
 
 // [2]
 select {
-	
+
   	background: $input-background;
   	border-radius: 0;
   	color: $input-color;

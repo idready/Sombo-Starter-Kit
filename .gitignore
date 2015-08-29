@@ -11,9 +11,9 @@ test/bower_components
 
 #Generated Juknks
 
-.editorconfig
-.gitattributes
-.jshintrc
+#.editorconfig
+#.gitattributes
+#.jshintrc
 .yo-rc.json
 
 
