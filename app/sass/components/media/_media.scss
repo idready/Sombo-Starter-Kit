@@ -1,7 +1,12 @@
 
+@include exports(medias) {
+
+
 /* ===========================================
- * Different media properties 
+ * Different media properties
  * =========================================== */
 
-@import 'particles/images'; 
-@import 'particles/videos'; 
+    @import 'particles/images';
+    @import 'particles/videos';
+
+} // Include component if required.
