@@ -1,20 +1,20 @@
 
 @include exports(table) {
 
-/* ===========================================
- * Table property
- * =========================================== */
+    /* ===========================================
+     * Table property
+     * =========================================== */
 
-/* Define table basic style
- * ==================================== */
+    /* Define table basic style
+     * ==================================== */
 
 
-table {
-	
-	th,
-	td {
-		vertical-align: middle;
-	}
-}
+    table {
+
+    	th,
+    	td {
+    		vertical-align: middle;
+    	}
+    }
 
 } // Include component if required.
