@@ -1,6 +1,4 @@
 
-@include exports(form) {
-
 /* ===========================================
  * Inputs types
  * =========================================== */
@@ -58,5 +56,3 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   @include tab-focus;
 }
-
-} // Include component if required.
